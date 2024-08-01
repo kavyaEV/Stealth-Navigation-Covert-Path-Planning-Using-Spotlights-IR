@@ -1,0 +1,11 @@
+searchlight map width:  602
+Traceback (most recent call last):
+  File "/home/salma/year/IR/catkin/src/ir-final-project/stealth_robot/scripts/searchlight.py", line 337, in <module>
+    cloud = SearchlightCloud(searchlights)
+  File "/home/salma/year/IR/catkin/src/ir-final-project/stealth_robot/scripts/searchlight.py", line 89, in __init__
+    self.rate.sleep()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/timer.py", line 103, in sleep
+    sleep(self._remaining(curr_time))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/timer.py", line 165, in sleep
+    raise rospy.exceptions.ROSInterruptException("ROS shutdown request")
+rospy.exceptions.ROSInterruptException: ROS shutdown request

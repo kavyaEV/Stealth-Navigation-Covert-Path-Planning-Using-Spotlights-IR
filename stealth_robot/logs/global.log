@@ -1,0 +1,32 @@
+agent: qlearner
+[0m[ INFO] [1701332780.570715125]: RLAgent: starting main loop[0m
+Agent: QLearner
+... logging to /home/salma/.ros/log/1e4776ae-8f46-11ee-84cb-f02f74169083/roslaunch-ros.totoro-98005.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/salma/year/IR/catkin/src/ir-final-project/stealth_robot/launch/lgfloor.launch
+[1mstarted roslaunch server http://ros.totoro:36061/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /use_sim_time: True
+
+NODES
+  /
+    agent (rl_agent/agent)
+    map_server (map_server/map_server)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/salma/year/IR/catkin/src/ir-final-project/stealth_robot/launch/lgfloor.launch http://localhost:11311
+[1mprocess[map_server-1]: started with pid [98063][0m
+[1mprocess[agent-2]: started with pid [98064][0m
+[agent-2] killing on exit
+[map_server-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

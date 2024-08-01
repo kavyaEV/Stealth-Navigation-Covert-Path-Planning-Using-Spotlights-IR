@@ -1,0 +1,17 @@
+<launch>
+    <param name="/use_sim_time" value="false"/>
+    <param name="~tf_buffer_duration" value="10.0"/>
+    <param name="initial_pose_timeout" value="30.0" />
+
+    <!-- map server -->
+    <node name="map_server" pkg="map_server" type="map_server"
+    	args="$(find stealth_robot)/maps/map1.yaml" output="screen"/>
+
+    <!-- Q-learning agent -->
+    <node name="agent" pkg="rl_agent" type="agent" 
+    	args="--agent qlearner" output="screen"/>
+
+    <!-- environment runner -->
+    <node name="environment" pkg="stealth_robot" type="env_runner.py"
+    	args="map1 0" output="screen"/>
+</launch>
